@@ -1,0 +1,22 @@
+<h1 class="animated fadein fast text-center">BuscadorPr</h1>
+<hr>
+<div class="card-columns">
+
+    <div class=" card animated fadein  fast" *ngFor="let item of  mivariable; let i = index" >
+
+<img class="card-img-top img-fluid" [src]="item.imagen" alt="">
+
+<div class="card-body"> 
+
+<h4 class="car-title">{{item.nombre}}</h4>
+<p class="card-tex">{{item.biografia}}</p>
+<p class="card-tex"><small class="text-muted">{{item.Fecha}}</small></p>
+<p class="card-tex"><small class="text-muted">{{item.Universo}}</small></p>
+
+<button class="btn btn-outline-primary btn-block">Ver mas</button>
+</div>
+    
+</div>
+
+</div>
+
