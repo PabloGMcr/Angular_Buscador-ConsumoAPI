@@ -7,6 +7,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { HeroeComponent } from './Components/heroe/heroe.component';
 import { BuscadorComponent } from './Components/buscador/buscador.component';
+import{HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BuscadorComponent } from './Components/buscador/buscador.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
