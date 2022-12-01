@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BuscadorComponent } from './Components/buscador/buscador.component';
 import { HeroeComponent } from './Components/heroe/heroe.component';
 import { HomeComponent } from './Components/home/home.component';
+import { PersonasComponent } from './Components/personas/personas.component';
 // importar visualizar
 //Home
 //Hero
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'hero',component:HeroeComponent},
   {path:'buscador',component:BuscadorComponent},
   {path : 'buscar/:busqueda',component:BuscadorComponent},
+  {path:'personas',component:PersonasComponent},
   {path:'**',pathMatch:'full',redirectTo:'home'}
 
   

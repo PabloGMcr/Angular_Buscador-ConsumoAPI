@@ -1,0 +1,27 @@
+<div class="card m-3">
+
+    <div class="card-body">
+
+        <div class="form-group form-inline tex-lef">
+            <label class="mr-4" for="">Title</label>
+            <input type="text" class="form-control col-10" #tittle>
+        </div>
+        <div class="form-group form-inline tex-lef ">
+            <label class="mr-4" for="">Body</label>
+            <input type="text" class="form-control col-10" #body>  
+        </div>
+
+        <button class="btn btn-block btn-primary" (click)="agregar({userId:'10',tittle:tittle.value,body:body.value})">Enviar</button>
+
+    </div>
+
+</div>
+<hr>
+
+<h3>Binding</h3>
+
+<form #form="ngForm" (ngSubmit)="Test()">
+
+    <button type="submit">Enviar2</button>
+
+</form>
