@@ -1,4 +1,8 @@
-<div class="card m-3">
+
+<h3>Ejemplo mala practica| Texto comentado</h3>
+
+
+<!-- <div class="card m-3">
 
     <div class="card-body">
 
@@ -15,13 +19,53 @@
 
     </div>
 
-</div>
+</div> -->
+
 <hr>
 
-<h3>Binding</h3>
+<h3>Binding.</h3>
 
-<form #form="ngForm" (ngSubmit)="Test()">
+<form #form="ngForm" class="col-6 offset-3" (ngSubmit)="agregar()">
 
-    <button type="submit">Enviar2</button>
+    <div class="form-group">
+        <label class="mr-4" for="">UserId</label>
+        <input  [(ngModel)]="Mipersona.userId" type="text"  name="userId" class="form-control">
+    </div>
+    
+    <div class="form-group">
+        <label class="mr-4" for="">Tittle</label>
+        <input  [(ngModel)]="Mipersona.title" type="text" name="title" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label class="mr-4" for="">Body</label>
+        <input  [(ngModel)]="Mipersona.body" type="text" name="body" class="form-control">
+    </div>
+
+    <button class="btn-success" type="submit">Enviar2</button>
 
 </form>
+
+<hr>
+<h3>Prueba Biding</h3>
+
+<form class="col-6 offset-3" action="">
+
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="{{Mipersona.userId}}">
+        <label for="floatingInput">UserId</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="{{Mipersona.title}}">
+        <label for="floatingPassword">Title</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="{{Mipersona.body}}">
+        <label for="floatingPassword">Body</label>
+      </div>
+
+</form>
+
+
+
+
